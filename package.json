@@ -1,0 +1,34 @@
+{
+  "name": "typescript_template",
+  "version": "1.0.0",
+  "description": "Template project which use a basic typescript configuration",
+  "main": "src/main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf -d dist",
+    "build": "npm run clean && tsc",
+    "start": "npm run build && node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jortiz-dreamcode/typescript_template.git"
+  },
+  "keywords": [
+    "template",
+    "typescript",
+    "node",
+    "jortiz",
+    "javascript",
+    "vscode"
+  ],
+  "author": "Jonathan Ortiz",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jortiz-dreamcode/typescript_template/issues"
+  },
+  "homepage": "https://github.com/jortiz-dreamcode/typescript_template#readme",
+  "dependencies": {
+    "rimraf": "3.0.2",
+    "typescript": "4.7.3"
+  }
+}
