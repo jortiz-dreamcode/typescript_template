@@ -28,7 +28,9 @@
   },
   "homepage": "https://github.com/jortiz-dreamcode/typescript_template#readme",
   "dependencies": {
-    "rimraf": "3.0.2",
+    "rimraf": "3.0.2"
+  },
+  "devDependencies": {
     "typescript": "4.7.3"
   }
 }
