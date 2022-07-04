@@ -4,9 +4,13 @@
   "description": "Template project which use a basic typescript configuration",
   "main": "dist/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run clean && npm run build && jest --config jestconfig.json",
+    "lint": "tslint -p tsconfig.json",
+    "format-dist": "prettier --write \"dist/**/*.js\"",
+    "format": "prettier --write \"src/**/*.ts\"",
     "clean": "rimraf -d dist",
-    "build": "npm run clean && tsc",
+    "build": "npm run clean && npm run lint && npm run format && tsc",
+    "postbuild": "npm run format-dist",
     "start": "npm run build && node ."
   },
   "repository": {
